@@ -6,8 +6,7 @@ repository: https://github.com/belovance/fluttrap
 issue_tracker: https://github.com/belovance/fluttrap/issues
 documentation: https://fluttrap.belovance.com
 topics: [ui, widgets, layouts, utilities, bootstrap]
-funding:
-  [https://github.com/sponsors/belovance, https://buymeacoffee.com/belovance]
+funding: [https://github.com/sponsors/belovance]
 
 environment:
   sdk: ^3.10.1
