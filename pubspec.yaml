@@ -1,12 +1,11 @@
 name: fluttrap
 description: "Fluttrap is a Bootstrap inspired UI framework for Flutter that helps developers build responsive, scalable apps faster using prebuilt widgets, layouts, and theme utilities."
-version: 0.0.0
+version: 0.0.1
 homepage: https://fluttrap.belovance.com
 repository: https://github.com/belovance/fluttrap
 issue_tracker: https://github.com/belovance/fluttrap/issues
 documentation: https://fluttrap.belovance.com
-topics:
-  [ui, responsive, components, widgets, layouts, utilities, themes, bootstrap]
+topics: [ui, widgets, layouts, utilities, bootstrap]
 funding:
   [https://github.com/sponsors/belovance, https://buymeacoffee.com/belovance]
 
@@ -24,5 +23,5 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 
 screenshots:
-  - description: The flutter bloc package logo.
+  - description: The Fluttrap Logo
     path: screenshots/fluttrap-logo.png
