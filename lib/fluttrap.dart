@@ -3,7 +3,22 @@ library;
 import 'src/tokens/tokens.dart';
 
 export 'src/tokens/tokens.dart';
+export 'src/components/components.dart';
+export 'src/extensions/extensions.dart';
 
+/// <h1><img src="https://raw.githubusercontent.com/belovance/fluttrap/main/screenshots/fluttrap-logo.png" height="18"/> Fluttrap</h1>
+///
+/// A **production-ready, Bootstrap-inspired design and component framework for Flutter** that helps developers build **clean, responsive, scalable, and visually consistent apps faster** across mobile, web, and desktop.
+///
+/// With Fluttrap, you eliminate repetitive UI work, maintain a unified design language, and ship polished Flutter experiences with confidence.
+///
+/// ---
+///
+/// ### Learn More & Get Started
+/// - Documentation & Guides: https://fluttrap.belovance.com
+/// - GitHub Repository: https://github.com/belovance/fluttrap
+/// - Issues & Feature Requests: https://github.com/belovance/fluttrap/issues
+/// - Pub.dev Package: https://pub.dev/packages/fluttrap
 class Fluttrap {
   Fluttrap._();
 
@@ -16,6 +31,7 @@ class Fluttrap {
     lineHeights: FluttrapLineHeights(),
   );
   static FluttrapOpacity _opacity = const FluttrapOpacity();
+  static FluttrapRadius _radius = const FluttrapRadius();
   static FluttrapShadows _shadows = const FluttrapShadows();
   static FluttrapSizing _sizing = const FluttrapSizing();
   static FluttrapSpacing _spacing = const FluttrapSpacing();
@@ -27,6 +43,7 @@ class Fluttrap {
   static FluttrapFontWeights get fontWeights => _typography.fontWeights;
   static FluttrapLineHeights get lineHeights => _typography.lineHeights;
   static FluttrapOpacity get opacity => _opacity;
+  static FluttrapRadius get radius => _radius;
   static FluttrapShadows get shadows => _shadows;
   static FluttrapSizing get sizing => _sizing;
   static FluttrapSpacing get spacing => _spacing;
@@ -37,6 +54,7 @@ class Fluttrap {
     FluttrapBorders? borders,
     FluttrapColors? colors,
     FluttrapOpacity? opacity,
+    FluttrapRadius? radius,
     FluttrapShadows? shadows,
     FluttrapSizing? sizing,
     FluttrapSpacing? spacing,
@@ -46,6 +64,7 @@ class Fluttrap {
     if (borders != null) _borders = borders;
     if (colors != null) _colors = colors;
     if (opacity != null) _opacity = opacity;
+    if (radius != null) _radius = radius;
     if (shadows != null) _shadows = shadows;
     if (sizing != null) _sizing = sizing;
     if (spacing != null) _spacing = spacing;

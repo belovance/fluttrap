@@ -10,6 +10,9 @@ class FluttrapColors {
     Color? danger,
     Color? light,
     Color? dark,
+    Color? white,
+    Color? black,
+    Color? transparent,
   }) : _primary = primary ?? const Color(0xFF0D6EFD),
        _secondary = secondary ?? const Color(0xFF6C757D),
        _success = success ?? const Color(0xFF198754),
@@ -17,7 +20,10 @@ class FluttrapColors {
        _warning = warning ?? const Color(0xFFFFC107),
        _danger = danger ?? const Color(0xFFDC3545),
        _light = light ?? const Color(0xFFF8F9FA),
-       _dark = dark ?? const Color(0xFF212529);
+       _dark = dark ?? const Color(0xFF212529),
+       _white = white ?? const Color(0xFFFFFFFF),
+       _black = black ?? const Color(0xFF000000),
+       _transparent = transparent ?? const Color(0x00000000);
 
   final Color _primary;
   final Color _secondary;
@@ -27,6 +33,9 @@ class FluttrapColors {
   final Color _danger;
   final Color _light;
   final Color _dark;
+  final Color _white;
+  final Color _black;
+  final Color _transparent;
 
   Color get primary => _primary;
   Color get secondary => _secondary;
@@ -36,4 +45,7 @@ class FluttrapColors {
   Color get danger => _danger;
   Color get light => _light;
   Color get dark => _dark;
+  Color get white => _white;
+  Color get black => _black;
+  Color get transparent => _transparent;
 }

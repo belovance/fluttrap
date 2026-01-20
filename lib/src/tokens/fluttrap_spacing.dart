@@ -1,30 +1,36 @@
+import 'package:flutter/widgets.dart';
+
 class FluttrapSpacing {
   const FluttrapSpacing({
-    double? base,
-    double? s0,
-    double? s1,
-    double? s2,
-    double? s3,
-    double? s4,
-    double? s5,
-  }) : _s0 = s0 ?? 0.0,
-       _s1 = s1 ?? (base ?? 16.0) * 0.25,
-       _s2 = s2 ?? (base ?? 16.0) * 0.50,
-       _s3 = s3 ?? (base ?? 16.0) * 1.0,
-       _s4 = s4 ?? (base ?? 16.0) * 1.5,
-       _s5 = s5 ?? (base ?? 16.0) * 3.0;
+    double base = 16.0,
+    double? x1,
+    double? x2,
+    double? x3,
+    double? x4,
+    double? x5,
+  }) : _x1 = x1 ?? base * 0.25,
+       _x2 = x2 ?? base * 0.50,
+       _x3 = x3 ?? base * 1.0,
+       _x4 = x4 ?? base * 1.5,
+       _x5 = x5 ?? base * 3.0;
 
-  final double _s0;
-  final double _s1;
-  final double _s2;
-  final double _s3;
-  final double _s4;
-  final double _s5;
+  final double _x1;
+  final double _x2;
+  final double _x3;
+  final double _x4;
+  final double _x5;
 
-  double get s0 => _s0;
-  double get s1 => _s1;
-  double get s2 => _s2;
-  double get s3 => _s3;
-  double get s4 => _s4;
-  double get s5 => _s5;
+  EdgeInsets get p0 => EdgeInsets.zero;
+  EdgeInsets get p1 => EdgeInsets.all(_x1);
+  EdgeInsets get p2 => EdgeInsets.all(_x2);
+  EdgeInsets get p3 => EdgeInsets.all(_x3);
+  EdgeInsets get p4 => EdgeInsets.all(_x4);
+  EdgeInsets get p5 => EdgeInsets.all(_x5);
+
+  EdgeInsets get m0 => EdgeInsets.zero;
+  EdgeInsets get m1 => EdgeInsets.all(_x1);
+  EdgeInsets get m2 => EdgeInsets.all(_x2);
+  EdgeInsets get m3 => EdgeInsets.all(_x3);
+  EdgeInsets get m4 => EdgeInsets.all(_x4);
+  EdgeInsets get m5 => EdgeInsets.all(_x5);
 }
