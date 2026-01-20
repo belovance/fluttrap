@@ -21,6 +21,8 @@ class FluttrapBox extends StatelessWidget {
 
   final Clip? clipBehavior;
 
+  final double? opacity;
+
   final VoidCallback? onTap;
   final VoidCallback? onLongPress;
   final VoidCallback? onDoubleTap;
@@ -46,6 +48,7 @@ class FluttrapBox extends StatelessWidget {
     this.height,
     this.constraints,
     this.clipBehavior,
+    this.opacity,
     this.onTap,
     this.onLongPress,
     this.onDoubleTap,
@@ -89,6 +92,10 @@ class FluttrapBox extends StatelessWidget {
       clipBehavior: clipBehavior ?? Clip.none,
       child: child,
     );
+
+    if (opacity != null && opacity! < 1) {
+      content = Opacity(opacity: opacity!.clamp(0.0, 1.0), child: content);
+    }
 
     if (margin != null) {
       content = Padding(padding: margin!, child: content);
@@ -134,8 +141,8 @@ class FluttrapBox extends StatelessWidget {
     double? width,
     double? height,
     BoxConstraints? constraints,
-    bool? clip,
     Clip? clipBehavior,
+    double? opacity,
     VoidCallback? onTap,
     VoidCallback? onLongPress,
     VoidCallback? onDoubleTap,
@@ -158,6 +165,7 @@ class FluttrapBox extends StatelessWidget {
       height: height ?? this.height,
       constraints: constraints ?? this.constraints,
       clipBehavior: clipBehavior ?? this.clipBehavior,
+      opacity: opacity ?? this.opacity,
       onTap: onTap ?? this.onTap,
       onLongPress: onLongPress ?? this.onLongPress,
       onDoubleTap: onDoubleTap ?? this.onDoubleTap,
