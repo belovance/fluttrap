@@ -311,6 +311,54 @@ class MainApp extends StatelessWidget {
             .toList(),
   );
 
+  Widget get _fluttrapSpacing => ListView(
+    children:
+        [
+              ColoredBox(
+                color: Fluttrap.colors.secondary,
+                child: Text(
+                  "Padding 1 - Margin 1",
+                  textAlign: TextAlign.center,
+                ).borderBlack.p1.m1.bgPrimary,
+              ),
+              ColoredBox(
+                color: Fluttrap.colors.secondary,
+                child: Text(
+                  "Padding 2 - Margin 2",
+                  textAlign: TextAlign.center,
+                ).borderBlack.p2.m2.bgPrimary,
+              ),
+              ColoredBox(
+                color: Fluttrap.colors.secondary,
+                child: Text(
+                  "Padding 3 - Margin 3",
+                  textAlign: TextAlign.center,
+                ).borderBlack.p3.m3.bgPrimary,
+              ),
+              ColoredBox(
+                color: Fluttrap.colors.secondary,
+                child: Text(
+                  "Padding 4 - Margin 4",
+                  textAlign: TextAlign.center,
+                ).borderBlack.p4.m4.bgPrimary,
+              ),
+              ColoredBox(
+                color: Fluttrap.colors.secondary,
+                child: Text(
+                  "Padding 5 - Margin 5",
+                  textAlign: TextAlign.center,
+                ).borderBlack.p5.m5.bgPrimary,
+              ),
+            ]
+            .map(
+              (e) => Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: e,
+              ),
+            )
+            .toList(),
+  );
+
   Map<String, Widget> get _tabs => {
     "Backgrounds": _fluttrapBackgrounds,
     "Borders": _fluttrapBorders,
@@ -318,6 +366,7 @@ class MainApp extends StatelessWidget {
     "Opacity": _fluttrapOpacity,
     "Shadows": _fluttrapShadows,
     "Sizing": _fluttrapSizing,
+    "Spacing": _fluttrapSpacing,
   };
 
   @override

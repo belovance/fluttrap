@@ -1,5 +1,3 @@
-import 'package:flutter/widgets.dart';
-
 class FluttrapSpacing {
   const FluttrapSpacing({
     double base = 16.0,
@@ -20,17 +18,10 @@ class FluttrapSpacing {
   final double _x4;
   final double _x5;
 
-  EdgeInsets get p0 => EdgeInsets.zero;
-  EdgeInsets get p1 => EdgeInsets.all(_x1);
-  EdgeInsets get p2 => EdgeInsets.all(_x2);
-  EdgeInsets get p3 => EdgeInsets.all(_x3);
-  EdgeInsets get p4 => EdgeInsets.all(_x4);
-  EdgeInsets get p5 => EdgeInsets.all(_x5);
-
-  EdgeInsets get m0 => EdgeInsets.zero;
-  EdgeInsets get m1 => EdgeInsets.all(_x1);
-  EdgeInsets get m2 => EdgeInsets.all(_x2);
-  EdgeInsets get m3 => EdgeInsets.all(_x3);
-  EdgeInsets get m4 => EdgeInsets.all(_x4);
-  EdgeInsets get m5 => EdgeInsets.all(_x5);
+  double get x0 => 0.0;
+  double get x1 => _x1;
+  double get x2 => _x2;
+  double get x3 => _x3;
+  double get x4 => _x4;
+  double get x5 => _x5;
 }

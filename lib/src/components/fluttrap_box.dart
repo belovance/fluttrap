@@ -86,6 +86,7 @@ class FluttrapBox extends StatelessWidget {
       alignment: alignment,
       width: width,
       height: height,
+      margin: margin,
       padding: padding,
       constraints: constraints,
       decoration: _decoration,
@@ -95,10 +96,6 @@ class FluttrapBox extends StatelessWidget {
 
     if (opacity != null && opacity! < 1) {
       content = Opacity(opacity: opacity!.clamp(0.0, 1.0), child: content);
-    }
-
-    if (margin != null) {
-      content = Padding(padding: margin!, child: content);
     }
 
     if (_interactive) {

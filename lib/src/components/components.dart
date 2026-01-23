@@ -5,3 +5,5 @@ export 'fluttrap_text_color.dart';
 export 'fluttrap_opacity.dart';
 export 'fluttrap_shadow.dart';
 export 'fluttrap_sizing.dart';
+export 'fluttrap_padding.dart';
+export 'fluttrap_margin.dart';
