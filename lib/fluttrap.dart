@@ -3,7 +3,7 @@ library;
 import 'src/tokens/tokens.dart';
 
 export 'src/tokens/tokens.dart';
-export 'src/components/components.dart';
+export 'src/utilities/utilities.dart';
 export 'src/extensions/extensions.dart';
 
 /// <h1><img src="https://raw.githubusercontent.com/belovance/fluttrap/main/screenshots/fluttrap-logo.png" height="18"/> Fluttrap</h1>
